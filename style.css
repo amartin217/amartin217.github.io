@@ -6,6 +6,7 @@ body {
   background-color: #fafafa;
 }
 
+/* Header and Navigation */
 header {
   background-color: #004c97;
   color: white;
@@ -24,13 +25,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  text-align: left;
-}
-
 h1 {
   color: white;
 }
@@ -38,6 +32,15 @@ h2, h3 {
   color: #004c97;
 }
 
+/* Main Layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+/* About Section */
 .about {
   display: flex;
   align-items: center;
@@ -49,17 +52,54 @@ h2, h3 {
   border-radius: 50%;
 }
 
+/* --- UPDATED PROJECT SECTION --- */
 .portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
 }
 
 .project img {
-  width: 100%;
-  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-right: 1px solid #eee;
 }
 
+.project-text {
+  padding: 1rem 1.5rem;
+}
+
+.project-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-text a {
+  color: #004c97;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-text a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   background-color: #004c97;
   color: white;
@@ -67,3 +107,23 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+/* --- Responsive Design --- */
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .project-text {
+    padding: 1rem;
+  }
+}
+
