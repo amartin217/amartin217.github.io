@@ -6,7 +6,7 @@ body {
   background-color: #fafafa;
 }
 
-/* Header and Navigation */
+/* Header */
 header {
   background-color: #004c97;
   color: white;
@@ -25,20 +25,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main Layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+  overflow-x: hidden;
+}
+
 h1 {
   color: white;
 }
 
 h2, h3 {
   color: #004c97;
-}
-
-/* Main Layout */
-main {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  text-align: left;
 }
 
 /* About Section */
@@ -53,76 +54,60 @@ main {
   border-radius: 50%;
 }
 
-/* --- PORTFOLIO SECTIONS --- */
+/* Portfolio Sections */
 .portfolio-section {
   margin-bottom: 3rem;
 }
 
-.portfolio-section h2 {
-  color: #004c97;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid #004c97;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-}
-
-/* --- PROJECT CARDS --- */
 .portfolio {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .project {
-  display: flex;
-  align-items: center;
-  background: white;
-  border-radius: 14px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-  padding: 1rem;
-}
-
-.project:hover {
-  transform: translateY(-4px);
-}
-
-/* ✅ Images: Show full picture, no cropping */
-.project img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  background-color: #f0f0f0;
+  background-color: white;
+  padding: 1.5rem;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* ✅ allows shrinking properly on small screens */
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* ✅ Academic/Personal Projects (CareSync) */
+.project:not(.internship-project) img {
+  width: 300px;
+  max-width: 100%; /* ✅ prevents overflow */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
-.project-text {
-  padding: 1.5rem 2rem;
+.project:not(.internship-project) .project-text {
   flex: 1;
+  min-width: 200px;
 }
 
-.project-text h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+/* ✅ Internship Projects — image above text */
+.project.internship-project {
+  flex-direction: column;
+  text-align: center;
 }
 
-.project-text a {
-  color: #004c97;
-  text-decoration: none;
-  font-weight: bold;
+.project.internship-project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
 }
 
-.project-text a:hover {
-  text-decoration: underline;
-}
-
-.project-text p {
-  font-size: 1rem;
-  line-height: 1.5;
+.project.internship-project .project-text {
+  padding: 1rem 1.5rem;
+  text-align: left;
 }
 
 /* Footer */
@@ -134,38 +119,4 @@ footer {
   margin-top: 2rem;
 }
 
-/* --- RESPONSIVE DESIGN --- */
-@media (max-width: 800px) {
-  .project {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project img {
-    width: 100%;
-    height: auto;
-  }
-
-  .project-text {
-    padding: 1rem 1.5rem;
-  }
-}
-
-/* Internship projects: image above text */
-.project.internship-project {
-  flex-direction: column; /* stack image above text */
-  text-align: center;
-}
-
-.project.internship-project img {
-  width: 100%;      /* make full width of card */
-  height: auto;     /* keep aspect ratio */
-  border-right: none; 
-  border-bottom: 1px solid #eee;
-  border-radius: 10px 10px 0 0; /* rounded top corners */
-}
-
-.project.internship-project .project-text {
-  padding: 1rem 1.5rem;
-}
 
