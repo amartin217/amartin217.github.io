@@ -151,4 +151,21 @@ footer {
   }
 }
 
+/* Internship projects: image above text */
+.project.internship-project {
+  flex-direction: column; /* stack image above text */
+  text-align: center;
+}
+
+.project.internship-project img {
+  width: 100%;      /* make full width of card */
+  height: auto;     /* keep aspect ratio */
+  border-right: none; 
+  border-bottom: 1px solid #eee;
+  border-radius: 10px 10px 0 0; /* rounded top corners */
+}
+
+.project.internship-project .project-text {
+  padding: 1rem 1.5rem;
+}
 
