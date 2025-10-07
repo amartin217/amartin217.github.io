@@ -28,6 +28,7 @@ nav a:hover {
 h1 {
   color: white;
 }
+
 h2, h3 {
   color: #004c97;
 }
@@ -52,7 +53,21 @@ main {
   border-radius: 50%;
 }
 
-/* --- PROJECT SECTION --- */
+/* --- PORTFOLIO SECTIONS --- */
+.portfolio-section {
+  margin-bottom: 3rem;
+}
+
+.portfolio-section h2 {
+  color: #004c97;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #004c97;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* --- PROJECT CARDS --- */
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -74,12 +89,12 @@ main {
   transform: translateY(-4px);
 }
 
-/* ✅ Image: Show entire image regardless of orientation */
+/* ✅ Images: Show full picture, no cropping */
 .project img {
   width: 300px;
   height: 300px;
-  object-fit: contain; /* show whole image */
-  background-color: #f0f0f0; /* adds neutral space around non-square images */
+  object-fit: contain;
+  background-color: #f0f0f0;
   border-radius: 10px;
   flex-shrink: 0;
 }
@@ -119,7 +134,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* --- Responsive Design --- */
+/* --- RESPONSIVE DESIGN --- */
 @media (max-width: 800px) {
   .project {
     flex-direction: column;
@@ -129,14 +144,11 @@ footer {
   .project img {
     width: 100%;
     height: auto;
-    border-right: none;
-    border-bottom: 1px solid #eee;
   }
 
   .project-text {
     padding: 1rem 1.5rem;
   }
 }
-
 
 
