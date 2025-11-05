@@ -4,38 +4,145 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Allison Martin</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0 0.5rem;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem 1.5rem;
+      background-color: #1e3a8a;
+      color: white;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .header-right {
+      text-align: right;
+    }
+
+    .header-right nav a {
+      color: white;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #1e3a8a;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-right {
+        text-align: left;
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Allison Martin Resume</h1>
-    <nav a>
-      <a href="index.html">About</a>
-      <a href="resume.html" class="active">Resume</a>
-      <a href="projects.html">Projects</a>
-    </nav a>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">About</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section tabindex = "0">
+    <section tabindex="0">
       <h2>Education</h2>
-      <p><strong>University of Michigan</strong> — B.S.E. in Computer Science, Minor in Statistics (August 2022- May 2026)</p>
+      <p><strong>University of Michigan</strong> — B.S.E. in Computer Science, Minor in Statistics (August 2022 - May 2026)</p>
       <ul>
-        <li><strong>CSE Major GPA:</strong> 3.9/4.0 <strong>Cumulative GPA:</strong> 3.8/4.0</li>
+        <li><strong>CSE Major GPA:</strong> 3.9/4.0 | <strong>Cumulative GPA:</strong> 3.8/4.0</li>
         <li><strong>Awards:</strong> Robert Emmet Motley Scholarship, Victors Award, Engineering Dean’s List, University Honors</li>
         <li><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Computer Organization, Data-Oriented Programming, Data-Driven Web Applications, Computer Science Theory, Cryptography, Autonomous Robotics</li>
         <li><strong>Activities:</strong> STEM Society, Society of Women Engineers, Gamma Phi Beta, Girls in EECS</li>
       </ul>
     </section>
 
-    <section tabindex = "0">
+    <section tabindex="0">
       <h2>Experience</h2>
       <p><strong>Charles Schwab</strong> — Software Engineering Intern (June-August 2025)</p>
       <ul>
         <li>Contributed to back-end development of a middleware application supporting the Thinkorswim trading platform
           <ul>
             <li>Developed WebSocket APIs using Java, Spring Boot, and Gradle; performed thorough local testing and validation in GCP QA environments before production deployment </li>
-            <li>Wrote unit and integration tests, collaborating with quality assurance engineers to validate functionality across development and staging environments</li>
+            <li>Wrote unit and integration tests, collaborating with QA engineers to validate functionality across development and staging environments</li>
             <li>Leveraged Git, Bitbucket, and Jira for version control, code reviews, and agile Kanban workflow management</li>
             <li>Delivered production-ready code contributing to real-time data services that support 300,000+ concurrent users daily in active trading operations</li>
           </ul>
@@ -58,20 +165,20 @@
         </li>
       </ul>
 
-      <p><strong>University of Michigan </strong> — Computer Science Engineering Tutor (August 2024- May 2025)</p>
+      <p><strong>University of Michigan</strong> — Computer Science Engineering Tutor (August 2024 - May 2025)</p>
       <ul>
-        <li>Provide expert tutoring in Data Structures and Algorithms, Programming and Intro Data Structures, and Discrete Mathematics, offering personalized guidance to reinforce key concepts</li>
-        <li>Facilitate weekly one-on-one sessions, tailoring explanations to students’ individual learning styles to help students master complex topics, resulting in improved problem-solving skills and academic success</li>
+        <li>Provided tutoring in Data Structures and Algorithms, Programming, and Discrete Mathematics, tailoring guidance to students’ learning styles</li>
+        <li>Facilitated weekly one-on-one sessions to help students master complex topics and improve problem-solving skills</li>
       </ul>
 
-      <p><strong>Arlington Heights Park District</strong> — Pool Manager & Swim Lessons Coordinator (May 2019- August 2023)</p>
+      <p><strong>Arlington Heights Park District</strong> — Pool Manager & Swim Lessons Coordinator (May 2019 - August 2023)</p>
       <ul>
-        <li>Supervised 11 employees per shift, managed daily facility opening and closing procedures, led CPR and in-water rescue trainings, handled patron concerns and questions, and tested chlorine and PH levels hourly</li>
-        <li>Oversaw swim lesson program, created weekly age and skill-based lesson plans, trained over 30 swim lesson instructors, evaluated swimmer skill levels, and shared and explained feedback with parents</li>
+        <li>Supervised 11 employees per shift, managed daily facility operations, led CPR and in-water rescue trainings, and monitored chemical levels</li>
+        <li>Oversaw swim lesson program, created lesson plans, trained instructors, evaluated swimmers, and communicated feedback with parents</li>
       </ul>
     </section>
 
-    <section tabindex = "0">
+    <section tabindex="0">
       <h2>Technical Skills</h2>
       <ul class="skills">
         <li><strong>Languages:</strong> C++, Java, C#, Python, SQL, JavaScript</li>
@@ -81,7 +188,7 @@
       </ul>
     </section>
 
-    <section tabindex = "0">
+    <section tabindex="0">
       <h2>Projects</h2>
       <p>See my <a href="projects.html">Portfolio</a> for detailed case studies.</p>
     </section>
@@ -92,3 +199,4 @@
   </footer>
 </body>
 </html>
+
