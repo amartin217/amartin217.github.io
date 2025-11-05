@@ -25,45 +25,53 @@ a:hover {
 /* =========================
    HEADER
 ========================= */
+/* Header container */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem 1.5rem;
   background-color: #1e3a8a;
   color: white;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  text-align: center; /* fallback */
 }
 
-header h1 {
+/* Left side (title + contact) */
+.header-left {
+  display: inline-block; /* keeps it stacked vertically */
+  text-align: left;
+}
+
+.header-left h1,
+.header-left p.contact {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1rem; /* both same size */
+  font-weight: 500;
 }
 
-.header-right {
-  text-align: right;
+/* Nav bar centered below left side */
+.header-nav {
+  margin-top: 1rem;
+  font-size: 1.2rem; /* larger */
 }
 
-.header-right nav a {
+.header-nav a {
   color: white;
-  margin-left: 1rem;
-  font-weight: 700;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
 }
 
-nav a.active {
+.header-nav a.active {
   text-decoration: underline;
 }
 
- .contact-info p {
-   margin: 0.2rem 0;
-   font-size: 0.9rem;
- }
-.contact-info a {
-   margin-left: 0.5rem;
-   text-decoration: none;
-   color: white;
+.header-nav a:hover {
+  text-decoration: underline;
 }
+
+/* Optional: small spacing below header */
+header + main {
+  margin-top: 1.5rem;
+}
+
 
 /* =========================
    MAIN CONTENT
