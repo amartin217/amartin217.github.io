@@ -10,14 +10,17 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0 1rem;
+      padding: 0 0.5rem; /* narrower horizontal margins */
       background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
+      min-height: 100vh; /* ensure footer pushes down */
+      display: flex;
+      flex-direction: column;
     }
 
     a {
-      color: #f0e68c; /* subtle accent color */
+      color: #1e3a8a; /* dark blue links for content */
       text-decoration: none;
     }
 
@@ -30,7 +33,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
       background-color: #1e3a8a;
       color: white;
       flex-wrap: wrap;
@@ -46,6 +49,10 @@
       text-align: right;
     }
 
+    .header-right a {
+      color: white; /* white links in header/footer */
+    }
+
     .contact-info p {
       margin: 0.2rem 0;
       font-size: 0.9rem;
@@ -57,7 +64,6 @@
 
     nav a {
       margin-left: 1rem;
-      color: white;
       font-weight: 500;
     }
 
@@ -65,14 +71,18 @@
       text-decoration: underline;
     }
 
-    /* About Section */
+    /* Main Content */
+    main {
+      flex: 1; /* push footer down */
+      max-width: 1000px;
+      margin: 2rem auto; /* more vertical spacing from header/footer */
+    }
+
     .about {
       display: flex;
       align-items: flex-start;
       gap: 2rem;
-      padding: 2rem 0;
-      max-width: 1000px;
-      margin: auto;
+      padding: 2rem;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -171,6 +181,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
