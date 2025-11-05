@@ -5,184 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Allison Martin</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    a {
-      color: #1e3a8a;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 1rem 1.5rem;
-      background-color: #1e3a8a;
-      color: white;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-
-    .header-right {
-      text-align: right;
-    }
-
-    .header-right nav a {
-      color: white;
-      margin-left: 1rem;
-      font-weight: 500;
-    }
-
-    nav a.active {
-      text-decoration: underline;
-    }
-
-    /* Main Content */
-    main {
-      flex: 1;
-      max-width: 850px;
-      margin: 2rem auto;
-    }
-
-    section {
-      background-color: white;
-      border-radius: 10px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #1e3a8a;
-    }
-
-    ul {
-      margin-top: 0.5rem;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background-color: #1e3a8a;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .header-right {
-        text-align: left;
-        margin-top: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Allison Martin Portfolio Website</h1>
+    <h1>Allison Martin Resume</h1>
     <div class="header-right">
-      <div class="contact-info">
-        <p> <a href="mailto:allisonmartin217@gmail.com">allisonmartin217@gmail.com</a> |
-          <a href="https://github.com/amartin217" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/allisonmartin217" target="_blank">LinkedIn</a>
-        </p>
-      </div>
       <nav>
-        <a href="index.html" class="active">About</a>
-        <a href="resume.html">Resume</a>
+        <a href="index.html">About</a>
+        <a href="resume.html" class="active">Resume</a>
         <a href="projects.html">Projects</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section tabindex="0">
-      <h2>Education</h2>
-      <p><strong>University of Michigan</strong> — B.S.E. in Computer Science, Minor in Statistics (August 2022 - May 2026)</p>
-      <ul>
-        <li><strong>CSE Major GPA:</strong> 3.9/4.0 | <strong>Cumulative GPA:</strong> 3.8/4.0</li>
-        <li><strong>Awards:</strong> Robert Emmet Motley Scholarship, Victors Award, Engineering Dean’s List, University Honors</li>
-        <li><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Computer Organization, Data-Oriented Programming, Data-Driven Web Applications, Computer Science Theory, Cryptography, Autonomous Robotics</li>
-        <li><strong>Activities:</strong> STEM Society, Society of Women Engineers, Gamma Phi Beta, Girls in EECS</li>
-      </ul>
+    <!-- EDUCATION -->
+    <section class="timeline" tabindex="0">
+      <div class="timeline-item">
+        <h3>🎓 University of Michigan</h3>
+        <p>B.S.E. in Computer Science, Minor in Statistics (Aug 2022 - May 2026)</p>
+        <ul>
+          <li><strong>CSE Major GPA:</strong> 3.9/4.0 | <strong>Cumulative GPA:</strong> 3.8/4.0</li>
+          <li><strong>Awards:</strong> Robert Emmet Motley Scholarship, Victors Award, Engineering Dean’s List, University Honors</li>
+          <li><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Computer Organization, Data-Oriented Programming, Data-Driven Web Applications, Computer Science Theory, Cryptography, Autonomous Robotics</li>
+          <li><strong>Activities:</strong> STEM Society, Society of Women Engineers, Gamma Phi Beta, Girls in EECS</li>
+        </ul>
+      </div>
     </section>
 
-    <section tabindex="0">
-      <h2>Experience</h2>
-      <p><strong>Charles Schwab</strong> — Software Engineering Intern (June-August 2025)</p>
-      <ul>
-        <li>Contributed to back-end development of a middleware application supporting the Thinkorswim trading platform
-          <ul>
-            <li>Developed WebSocket APIs using Java, Spring Boot, and Gradle; performed thorough local testing and validation in GCP QA environments before production deployment </li>
-            <li>Wrote unit and integration tests, collaborating with QA engineers to validate functionality across development and staging environments</li>
-            <li>Leveraged Git, Bitbucket, and Jira for version control, code reviews, and agile Kanban workflow management</li>
-            <li>Delivered production-ready code contributing to real-time data services that support 300,000+ concurrent users daily in active trading operations</li>
-          </ul>
-        </li>
-        <li>Created a Grafana dashboard powered by Graphite queries to monitor and visualize critical application performance metrics in real time</li>
-      </ul>
+    <!-- EXPERIENCE -->
+    <section class="timeline" tabindex="0">
+      <div class="timeline-item">
+        <h3>💻 Charles Schwab — Software Engineering Intern</h3>
+        <p>June - August 2025</p>
+        <ul>
+          <li>Contributed to back-end development of a middleware application supporting the Thinkorswim trading platform
+            <ul>
+              <li>Developed WebSocket APIs using Java, Spring Boot, and Gradle; tested in GCP QA environments before production</li>
+              <li>Wrote unit and integration tests, collaborated with QA engineers</li>
+              <li>Used Git, Bitbucket, Jira for version control and agile workflow management</li>
+              <li>Delivered production-ready code supporting 300,000+ concurrent users daily</li>
+            </ul>
+          </li>
+          <li>Created Grafana dashboard with Graphite queries to monitor application performance in real time</li>
+        </ul>
+      </div>
 
-      <p><strong>Ollion</strong> — Data Insights Intern (June-August 2024)</p>
-      <ul>
-        <li>Full-stack development on a client web application for creating electronic funds transfers and generating reports
-          <ul>
-            <li>Developed and tested REST APIs using C#, SQL, Azure Data Studio, and Postman </li>
-            <li>Implemented dynamic front-end features using JavaScript, HTML5, Vue.js, Nuxt.js, and CSS</li>
-          </ul>
-        </li>
-        <li>Built a Generative Adversarial Network model to generate synthetic data
-          <ul>
-            <li>Utilized Python TensorFlow, NumPy, and Matplotlib to build the GAN model, altering input dataset and script variables to produce diverse output data for robust model training </li>
-          </ul>
-        </li>
-      </ul>
+      <div class="timeline-item">
+        <h3>💻 Ollion — Data Insights Intern</h3>
+        <p>June - August 2024</p>
+        <ul>
+          <li>Full-stack development on client web app for electronic funds transfers and reporting
+            <ul>
+              <li>Developed REST APIs using C#, SQL, Azure Data Studio, Postman</li>
+              <li>Implemented front-end features with JavaScript, HTML5, Vue.js, Nuxt.js, CSS</li>
+            </ul>
+          </li>
+          <li>Built Generative Adversarial Network (GAN) to generate synthetic data
+            <ul>
+              <li>Used Python, TensorFlow, NumPy, Matplotlib for diverse output data generation and model training</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-      <p><strong>University of Michigan</strong> — Computer Science Engineering Tutor (August 2024 - May 2025)</p>
-      <ul>
-        <li>Provided tutoring in Data Structures and Algorithms, Programming, and Discrete Mathematics, tailoring guidance to students’ learning styles</li>
-        <li>Facilitated weekly one-on-one sessions to help students master complex topics and improve problem-solving skills</li>
-      </ul>
+      <div class="timeline-item">
+        <h3>🎓 University of Michigan — Computer Science Engineering Tutor</h3>
+        <p>August 2024 - May 2025</p>
+        <ul>
+          <li>Provided tutoring in Data Structures and Algorithms, Programming, and Discrete Mathematics</li>
+          <li>Facilitated one-on-one sessions, tailored explanations to individual learning styles</li>
+        </ul>
+      </div>
 
-      <p><strong>Arlington Heights Park District</strong> — Pool Manager & Swim Lessons Coordinator (May 2019 - August 2023)</p>
-      <ul>
-        <li>Supervised 11 employees per shift, managed daily facility operations, led CPR and in-water rescue trainings, and monitored chemical levels</li>
-        <li>Oversaw swim lesson program, created lesson plans, trained instructors, evaluated swimmers, and communicated feedback with parents</li>
-      </ul>
+      <div class="timeline-item">
+        <h3>🏊 Arlington Heights Park District — Pool Manager & Swim Lessons Coordinator</h3>
+        <p>May 2019 - August 2023</p>
+        <ul>
+          <li>Supervised 11 employees per shift, managed daily facility operations, led CPR and in-water rescue trainings</li>
+          <li>Oversaw swim lesson program, created lesson plans, trained instructors, evaluated swimmers, and communicated feedback with parents</li>
+        </ul>
+      </div>
     </section>
 
+    <!-- TECHNICAL SKILLS -->
     <section tabindex="0">
       <h2>Technical Skills</h2>
       <ul class="skills">
@@ -193,6 +100,7 @@
       </ul>
     </section>
 
+    <!-- PROJECTS -->
     <section tabindex="0">
       <h2>Projects</h2>
       <p>See my <a href="projects.html">Portfolio</a> for detailed case studies.</p>
@@ -204,4 +112,5 @@
   </footer>
 </body>
 </html>
+
 
