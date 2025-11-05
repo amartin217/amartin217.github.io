@@ -195,60 +195,76 @@ footer {
 }
 
 /* Portfolio Sections */
-.portfolio-section {
-  margin-bottom: 3rem;
-}
-
 .portfolio {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+/* Individual project card */
 .project {
-  background-color: white;
-  padding: 1.5rem;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap; /* ✅ allows shrinking properly on small screens */
-  align-items: flex-start;
   overflow: hidden;
+  width: 300px; /* adjust as needed */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* ✅ Academic/Personal Projects (CareSync) */
-.project:not(.internship-project) img {
-  width: 300px;
-  max-width: 100%; /* ✅ prevents overflow */
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain;
-  flex-shrink: 0;
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.project:not(.internship-project) .project-text {
-  flex: 1;
-  min-width: 200px;
+/* Make the whole card clickable */
+.project a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
 }
 
-/* ✅ Internship Projects — image above text */
-.project.internship-project {
-  flex-direction: column;
-  text-align: center;
-}
-
-.project.internship-project img {
+/* Project image */
+.project img {
   width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-  object-fit: contain;
+  height: 180px;
+  object-fit: cover;
 }
 
-.project.internship-project .project-text {
-  padding: 1rem 1.5rem;
-  text-align: left;
+/* Project title */
+.project h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
 }
+
+/* Brief description */
+.project p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-full {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.project-full img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-full h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-full p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
 
 .experience-item {
   display: flex;
