@@ -30,7 +30,7 @@ header {
   background-color: #1e3a8a;
   color: white;
   padding: 1rem 2rem;
-  text-align: center; /* fallback */
+  text-align: left; /* fallback */
 }
 
 /* Left side (title + contact) */
