@@ -6,52 +6,109 @@
   <title>About Me | Allison Martin</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Quick header styling */
+    /* General page styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 1rem; /* narrower margins */
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    /* Header styling */
     header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       padding: 1rem 2rem;
-      background-color: #f5f5f5;
-      border-bottom: 1px solid #ccc;
+      background-color: #1e3a8a; /* blue header */
+      color: white;
+      flex-wrap: wrap;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
-    .contact-info {
+    .header-right {
       text-align: right;
+    }
+
+    .contact-info p {
+      margin: 0.2rem 0;
       font-size: 0.9rem;
     }
 
     .contact-info a {
-      margin-left: 0.5rem;
+      color: white;
       text-decoration: none;
-      color: #333;
+      margin-left: 0.3rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
     }
 
     nav a {
       margin-left: 1rem;
       text-decoration: none;
-      color: #333;
+      color: white;
+      font-weight: 500;
     }
 
     nav a.active {
-      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* About section styling */
+    .about {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .about .avatar {
+      width: 180px; /* slightly bigger */
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about div {
+      max-width: 800px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 1px solid #ccc;
+      background-color: #f0f0f0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Allison Martin Portfolio Website</h1>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:allisonmartin217@gmail.com">allisonmartin217@gmail.com</a></p>
-      <p>
-        <a href="https://github.com/amartin217" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/allisonmartin217" target="_blank">LinkedIn</a>
-      </p>
+    <div class="header-right">
+      <div class="contact-info">
+        <p>Email: <a href="mailto:allisonmartin217@gmail.com">allisonmartin217@gmail.com</a></p>
+        <p>
+          <a href="https://github.com/amartin217" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/allisonmartin217" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+      <nav>
+        <a href="index.html" class="active">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+      </nav>
     </div>
   </header>
 
@@ -75,4 +132,5 @@
   </footer>
 </body>
 </html>
+
 
