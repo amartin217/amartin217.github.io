@@ -59,6 +59,11 @@ nav a.active {
    margin: 0.2rem 0;
    font-size: 0.9rem;
  }
+.contact-info a {
+   margin-left: 0.5rem;
+   text-decoration: none;
+   color: white;
+}
 
 /* =========================
    MAIN CONTENT
