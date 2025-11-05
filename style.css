@@ -55,6 +55,11 @@ nav a.active {
   text-decoration: underline;
 }
 
+ .contact-info p {
+   margin: 0.2rem 0;
+   font-size: 0.9rem;
+ }
+
 /* =========================
    MAIN CONTENT
 ========================= */
