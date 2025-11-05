@@ -1,141 +1,204 @@
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0 0.5rem; /* narrower horizontal margins */
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      min-height: 100vh; /* ensure footer pushes down */
-      display: flex;
-      flex-direction: column;
-    }
+/* =========================
+   GENERAL STYLES
+========================= */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0 0.5rem;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-    a {
-      color: #1e3a8a; /* dark blue links for content */
-      text-decoration: none;
-    }
+a {
+  color: #1e3a8a; /* links in content */
+  text-decoration: none;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      background-color: #1e3a8a;
-      color: white;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+/* =========================
+   HEADER
+========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1.5rem;
+  background-color: #1e3a8a;
+  color: white;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
 
-    .header-right {
-      text-align: right;
-    }
+.header-right {
+  text-align: right;
+}
 
-    .header-right a {
-      color: white; /* white links in header/footer */
-    }
+.header-right nav a {
+  color: white;
+  margin-left: 1rem;
+  font-weight: 500;
+}
 
-    .contact-info p {
-      margin: 0.2rem 0;
-      font-size: 0.9rem;
-    }
+nav a.active {
+  text-decoration: underline;
+}
 
-    nav {
-      margin-top: 0.5rem;
-    }
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
 
-    nav a {
-      margin-left: 1rem;
-      font-weight: 500;
-    }
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
-    nav a.active {
-      text-decoration: underline;
-    }
+h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
 
-    /* Main Content */
-    main {
-      flex: 1; /* push footer down */
-      max-width: 850px;
-      margin: 2rem auto; /* more vertical spacing from header/footer */
-    }
+ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
 
-    .about {
-      display: flex;
-      align-items: flex-start;
-      gap: 2rem;
-      padding: 2rem;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
+ul li {
+  margin-bottom: 0.5rem;
+}
 
-    .about .avatar {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+/* =========================
+   ABOUT PAGE STYLING
+========================= */
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
 
-    .about div {
-      max-width: 750px;
-    }
+.about .avatar {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-    h2 {
-      margin-top: 0;
-      color: #1e3a8a;
-    }
+.about div {
+  max-width: 750px;
+}
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background-color: #1e3a8a;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
+/* =========================
+   TIMELINE STYLING FOR RESUME
+========================= */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .about {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #1e3a8a;
+}
 
-      .about div {
-        max-width: 100%;
-      }
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
 
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+.timeline-item::before {
+  content: '•';
+  position: absolute;
+  left: -2px;
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  top: 0;
+}
 
-      .header-right {
-        text-align: left;
-        margin-top: 1rem;
-      }
+/* Timeline headings */
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e3a8a;
+}
 
-      nav {
-        margin-top: 0.5rem;
-      }
-    }
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .about div {
+    max-width: 100%;
+  }
 
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .header-right {
+    text-align: left;
+    margin-top: 1rem;
+  }
 
+  nav {
+    margin-top: 0.5rem;
+  }
 
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item::before {
+    left: -4px;
+  }
+}
 
 /* Portfolio Sections */
 .portfolio-section {
@@ -193,13 +256,5 @@
   text-align: left;
 }
 
-/* Footer */
-footer {
-  background-color: #004c97;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
 
 
