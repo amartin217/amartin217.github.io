@@ -5,21 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me | Allison Martin</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Quick header styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 0.9rem;
+    }
+
+    .contact-info a {
+      margin-left: 0.5rem;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a.active {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Allison Martin</h1>
-    <nav a>
-      <a href="index.html" class="active">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-    </nav a>
+    <h1>Allison Martin Portfolio Website</h1>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:allisonmartin217@gmail.com">allisonmartin217@gmail.com</a></p>
+      <p>
+        <a href="https://github.com/amartin217" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/allisonmartin217" target="_blank">LinkedIn</a>
+      </p>
+    </div>
   </header>
 
   <main>
     <section class="about">
       <img src="headshot.JPEG" alt="Headshot of Allison" class="avatar">
-      <div tabindex = "0">
+      <div tabindex="0">
         <h2>About Me</h2>
         <p>Hi! I’m Allison Martin, a Computer Science Engineering student at the University of Michigan’s College of Engineering. 
         I’m passionate about back-end development—designing efficient systems, working with databases, and building scalable APIs that power intuitive front-end experiences. </p>
@@ -29,21 +68,6 @@
         I’m always eager to learn new technologies and contribute to projects that make a real-world difference.</p>
       </div>
     </section>
-     <section class="contact">
-  <h2>Contact</h2>
-  <p>
-    The best way to reach me is by email:
-    <a href="mailto:allisonmartin217@gmail.com">allisonmartin217@gmail.com</a>
-  </p>
-  <p>
-    You can also find me on:
-  </p>
-  <ul>
-    <li><a href="https://github.com/amartin217" target="_blank">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/allisonmartin217" target="_blank">LinkedIn</a></li>
-  </ul>
-</section>
-
   </main>
 
   <footer>
@@ -51,3 +75,4 @@
   </footer>
 </body>
 </html>
+
