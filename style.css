@@ -48,6 +48,7 @@ header {
 
 /* Nav bar centered below left side */
 .header-nav {
+  text-align: center;
   margin-top: 1rem;
   font-size: 1.2rem; /* larger */
 }
