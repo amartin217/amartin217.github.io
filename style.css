@@ -107,43 +107,18 @@ ul li {
 }
 
 /* =========================
-   TIMELINE STYLING FOR RESUME
+   STYLING FOR RESUME
 ========================= */
-.timeline {
-  position: relative;
-  padding-left: 2rem;
+.resume-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 15px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background-color: #1e3a8a;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-}
-
-.timeline-item::before {
-  content: '•';
-  position: absolute;
-  left: -2px;
-  color: #1e3a8a;
-  font-size: 1.5rem;
-  top: 0;
-}
-
-/* Timeline headings */
-.timeline-item h3 {
-  margin: 0;
-  font-size: 1.1rem;
+.resume-card h2 {
+  margin-top: 2rem;
   color: #1e3a8a;
 }
 
