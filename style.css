@@ -236,5 +236,16 @@ footer {
   text-align: left;
 }
 
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* keeps date aligned nicely with text */
+  margin-bottom: 0.5rem;
+}
+
+.experience-item .date {
+  color: #555; /* optional, lighter text for dates */
+}
+
 
 
