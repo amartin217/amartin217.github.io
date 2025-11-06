@@ -47,7 +47,7 @@ header {
   font-weight: 350;
 }
 
-.header-nav a {
+.header-left a {
   color: white !important;
   display: inline-block; /* keeps it stacked vertically */
   text-align: left;
