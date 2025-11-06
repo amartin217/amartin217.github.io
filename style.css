@@ -51,6 +51,7 @@ header {
   color: white !important;
   display: inline-block; /* keeps it stacked vertically */
   text-align: left;
+   font-size: 0.5rem;
 }
 
 /* Nav bar centered below left side */
