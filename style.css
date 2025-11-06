@@ -35,6 +35,7 @@ header {
 
 /* Left side (title + contact) */
 .header-left {
+   color: white !important;
   display: inline-block; /* keeps it stacked vertically */
   text-align: left;
 }
@@ -44,6 +45,12 @@ header {
   margin: 0;
   font-size: 1rem; /* both same size */
   font-weight: 350;
+}
+
+.header-nav a {
+  color: white !important;
+  display: inline-block; /* keeps it stacked vertically */
+  text-align: left;
 }
 
 /* Nav bar centered below left side */
