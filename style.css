@@ -282,6 +282,7 @@ footer {
 
 .experience-item .date {
   color: #555; /* optional, lighter text for dates */
+   font-style: italic;
 }
 
 .resume-card .experience-list {
