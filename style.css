@@ -44,7 +44,7 @@ header {
 .header-left h1,
 .header-left p.contact {
   margin: 0;
-  font-size: 1rem; /* both same size */
+  font-size: 1.25rem; /* both same size */
   font-weight: 350;
 }
 
