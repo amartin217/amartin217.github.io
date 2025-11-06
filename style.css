@@ -38,6 +38,7 @@ header {
    color: white !important;
   display: inline-block; /* keeps it stacked vertically */
   text-align: left;
+   font-size: 1.25rem;
 }
 
 .header-left h1,
