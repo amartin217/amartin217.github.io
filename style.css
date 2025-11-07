@@ -239,7 +239,7 @@ footer {
 /* Image on left */
 .project img {
   width: 200px;
-  height: 140px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0; /* keeps image size consistent */
@@ -266,7 +266,7 @@ footer {
 @media (max-width: 700px) {
   .project a {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-center;
   }
 
   .project img {
