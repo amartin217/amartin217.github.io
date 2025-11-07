@@ -202,7 +202,6 @@ footer {
     left: -4px;
   }
 }
-
 /* Portfolio Sections */
 .portfolio {
   display: flex;
@@ -298,6 +297,21 @@ footer {
   margin-bottom: 15px;
 }
 
+.caresync-section {
+  display: flex;
+  align-items: flex-start; /* keeps image and text top-aligned */
+  gap: 20px; /* space between image and text */
+}
+
+.caresync-section img {
+  width: 250px; /* adjust for your vertical image */
+  height: auto;
+  border-radius: 10px; /* optional styling */
+}
+
+.caresync-text {
+  max-width: 700px; /* keeps text readable */
+}
 
 .experience-item {
   display: flex;
