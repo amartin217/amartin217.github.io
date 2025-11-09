@@ -218,6 +218,7 @@ footer {
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
   padding: 15px;
+  gap: 20px;
 }
 
 .project:hover {
