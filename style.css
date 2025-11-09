@@ -299,7 +299,7 @@ footer {
 
 .caresync-section {
   display: flex;
-  align-items: flex-center; /* keeps image and text top-aligned */
+  align-items: center; /* keeps image and text top-aligned */
   gap: 20px; /* space between image and text */
 }
 
