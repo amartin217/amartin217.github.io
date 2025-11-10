@@ -119,7 +119,6 @@ ul li {
 ========================= */
 .about {
   display: flex;
-  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -132,6 +131,7 @@ ul li {
 }
 
 .about div {
+  align-items: flex-start;
   max-width: 750px;
 }
 
