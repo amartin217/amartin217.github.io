@@ -206,9 +206,10 @@ footer {
 /* Portfolio Sections */
 .portfolio {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
+
 .project-card {
   display: flex;
   flex-direction: column; /* stack title above content */
