@@ -264,7 +264,7 @@ footer {
 }
 
 /* Responsive layout: stack on small screens */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .project a {
     flex-direction: column;
     align-items: flex-center;
@@ -274,7 +274,7 @@ footer {
     width: 100%;
     height: auto;
   }
-}
+} */
 
 .project-full {
   max-width: 800px;
@@ -301,20 +301,20 @@ footer {
 }
 
 .caresync-section {
-  display: flex;
-  align-items: flex-start; /* keeps image and text top-aligned */
-  gap: 20px; /* space between image and text */
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  overflow: auto; /* ensures container clears the float */
 }
 
 .caresync-section img {
-  width: 300px; /* adjust for your vertical image */
+  float: left;
+  width: 300px; /* adjust as needed */
   height: auto;
-  border-radius: 10px; /* optional styling */
+  margin-right: 20px; /* space between image and text */
+  border-radius: 10px;
 }
 
 .caresync-text {
-  max-width: 700px; /* keeps text readable */
+  max-width: 700px;
 }
 
 .experience-item {
