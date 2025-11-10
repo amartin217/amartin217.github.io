@@ -279,6 +279,7 @@ footer {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
+  margin-bottom: 2rem;
 }
 
 .project-full img {
@@ -295,13 +296,14 @@ footer {
 .project-full p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
 }
 
 .caresync-section {
   display: flex;
   align-items: center; /* keeps image and text top-aligned */
   gap: 20px; /* space between image and text */
+   margin-bottom: 2rem;
 }
 
 .caresync-section img {
