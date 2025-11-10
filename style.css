@@ -59,14 +59,14 @@ header {
 .header-nav {
   text-align: center;
   margin-top: 1rem;
-  font-size: 1.2rem; /* larger */
+  font-size: 1rem; /* larger */
 }
 
 .header-nav a {
   color: white !important;
   text-decoration: none;
   margin: 0 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .header-nav a.active {
