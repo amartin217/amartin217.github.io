@@ -120,6 +120,7 @@ ul li {
 .about {
   display: flex;
   gap: 2rem;
+  align-items: flex-start;
 }
 
 .about .avatar {
