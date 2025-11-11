@@ -124,9 +124,9 @@ ul li {
 }
 
 .about .avatar {
-  width: 250px;
+  width: 200px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   flex-shrink: 0; /* prevents image from shrinking to fit container */
   /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
 }
