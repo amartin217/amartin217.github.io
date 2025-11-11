@@ -179,7 +179,7 @@ ul li {
    .about .avatar {
   float: left;
   margin: 1.2rem;
-  width: 100px;
+  width: 150px;
   height: auto;
   border-radius: 0%;
   flex-shrink: 0;
