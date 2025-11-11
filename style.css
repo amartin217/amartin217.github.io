@@ -58,7 +58,7 @@ header {
 /* Nav bar centered below left side */
 .header-nav {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   font-size: 1rem; /* larger */
 }
 
@@ -79,7 +79,7 @@ header {
 
 /* Optional: small spacing below header */
 header + main {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* iPhone and small screen optimization */
