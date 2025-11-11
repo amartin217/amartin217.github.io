@@ -175,6 +175,16 @@ ul li {
 .about div {
   max-width: 100%;
 }
+@media (max-width: 768px) {
+   .about .avatar {
+  float: left;
+  margin: 1.2rem;
+  width: 100px;
+  height: auto;
+  border-radius: 0%;
+  flex-shrink: 0;
+}
+}
 
 /* =========================
    STYLING FOR RESUME
