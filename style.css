@@ -34,8 +34,8 @@ a:active         { color: #ccc }  /* active links          */
 header {
   background-color: #202A44;
   color: white;
-  /* ACTION: Reduced top/bottom padding from 1rem to 0.5rem for shorter height */
-  padding: 0.5rem 2rem; 
+  /* ACTION: Reduced top/bottom padding from 1rem to 0.4rem for shorter height */
+  padding: 0.4rem 2rem; 
   text-align: left; /* fallback */
 }
 
@@ -64,8 +64,8 @@ header {
 /* Nav bar centered below left side */
 .header-nav {
   text-align: center;
-  /* ACTION: Reduced margin-top from 0.8rem to 0.3rem to pull nav up */
-  margin-top: 0.3rem; 
+  /* ACTION: Reduced margin-top from 0.8rem to 0.2rem to pull nav up */
+  margin-top: 0.2rem; 
   font-size: 1rem; /* larger */
 }
 
@@ -86,7 +86,7 @@ header {
 
 /* Optional: small spacing below header */
 header + main {
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 /* iPhone and small screen optimization */
