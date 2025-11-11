@@ -152,6 +152,68 @@ ul li {
   color: #1e3a8a;
 }
 
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* keeps date aligned nicely with text */
+  margin-bottom: 0.5rem;
+}
+
+.experience-item .date {
+  color: #555; /* optional, lighter text for dates */
+   font-style: italic;
+}
+
+.resume-card .experience-list {
+  list-style-type: disc; /* or circle, square, etc. */
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.resume-card .experience-list li {
+  margin-bottom: 0.5rem; /* space between bullets */
+}
+
+/* ---------- MOBILE VIEW ---------- */
+@media (max-width: 768px) {
+  .resume-card {
+    padding: 1.2rem;
+    box-shadow: none; /* optional for cleaner mobile look */
+  }
+
+  /* Stack title and date vertically instead of side-by-side */
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .experience-item .date {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  /* Slightly reduce margins and padding for compact layout */
+  .resume-card h2 {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .resume-card .experience-list {
+    padding-left: 1.2rem;
+  }
+
+  .resume-card .experience-list li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+
+  /* Make sure links and text fit comfortably */
+  .resume-card a {
+    word-break: break-word;
+  }
+}
+
 /* =========================
    FOOTER
 ========================= */
@@ -311,27 +373,6 @@ footer {
   max-width: 700px;
 }
 
-.experience-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline; /* keeps date aligned nicely with text */
-  margin-bottom: 0.5rem;
-}
-
-.experience-item .date {
-  color: #555; /* optional, lighter text for dates */
-   font-style: italic;
-}
-
-.resume-card .experience-list {
-  list-style-type: disc; /* or circle, square, etc. */
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.resume-card .experience-list li {
-  margin-bottom: 0.5rem; /* space between bullets */
-}
 
 
 
