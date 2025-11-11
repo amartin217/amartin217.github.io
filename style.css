@@ -160,18 +160,16 @@ ul li {
    ABOUT PAGE STYLING
 ========================= */
 .about {
-  display: flex;
-  gap: 2rem;
   align-items: flex-start;
 }
 
 .about .avatar {
   float: left;
+  margin: 1.2rem;
   width: 200px;
   height: auto;
-  border-radius: 50%;
-  /* flex-shrink: 0; /* prevents image from shrinking to fit container */ */
-  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+  border-radius: 0%;
+  flex-shrink: 0;
 }
 
 .about div {
