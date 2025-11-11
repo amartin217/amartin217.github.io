@@ -160,7 +160,6 @@ ul li {
    ABOUT PAGE STYLING
 ========================= */
 .about {
-  display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
