@@ -27,7 +27,7 @@ a:hover {
 ========================= */
 /* Header container */
 header {
-  background-color: #1e3a8a;
+  background-color: #000435;
   color: white;
   padding: 1rem 2rem;
   text-align: left; /* fallback */
@@ -135,7 +135,7 @@ section {
 
 h2 {
   margin-top: 0;
-  color: #1e3a8a;
+  color: #000435;
 }
 
 ul {
@@ -182,7 +182,7 @@ ul li {
 
 .resume-card h2 {
   margin-top: 2rem;
-  color: #1e3a8a;
+  color: #000435;
 }
 
 .experience-item {
@@ -253,7 +253,7 @@ ul li {
 footer {
   text-align: center;
   padding: 1rem 0;
-  background-color: #1e3a8a;
+  background-color: #000435;
   color: white;
   font-size: 0.9rem;
   margin-top: 2rem;
