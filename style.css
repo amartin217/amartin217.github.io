@@ -161,7 +161,6 @@ ul li {
 ========================= */
 .about {
   width: 850px;
-  gap: 2rem;
   align-items: flex-start;
 }
 
