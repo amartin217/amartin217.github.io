@@ -173,8 +173,7 @@ ul li {
 }
 
 .about div {
-  align-items: flex-start;
-  max-width: 750px;
+  max-width: 100%;
 }
 
 /* =========================
