@@ -29,21 +29,22 @@ a:hover {
 header {
   background-color: #202A44;
   color: white;
-  padding: 1rem 2rem;
+  /* ACTION: Reduced top/bottom padding from 1rem to 0.5rem for shorter height */
+  padding: 0.5rem 2rem; 
   text-align: left; /* fallback */
 }
 
 /* Left side (title + contact) */
 .header-left {
-   color: white !important;
+  color: white !important;
   display: inline-block; /* keeps it stacked vertically */
   text-align: left;
-   font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .header-left h1,
 .header-left p.contact {
-  margin: 0;
+  margin: 0; /* Ensures no extra spacing here */
   font-size: 1.25rem; /* both same size */
   font-weight: 350;
 }
@@ -52,13 +53,14 @@ header {
   color: white !important;
   display: inline-block; /* keeps it stacked vertically */
   text-align: left;
-   font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 /* Nav bar centered below left side */
 .header-nav {
   text-align: center;
-  margin-top: 0.8rem;
+  /* ACTION: Reduced margin-top from 0.8rem to 0.3rem to pull nav up */
+  margin-top: 0.3rem; 
   font-size: 1rem; /* larger */
 }
 
@@ -85,7 +87,10 @@ header + main {
 /* iPhone and small screen optimization */
 @media (max-width: 480px) {
   header {
-    padding: 0.75rem 1rem;
+    /* ACTION: Reduced top/bottom padding 
+       from 0.75rem to 0.5rem for small screens
+    */
+    padding: 0.5rem 1rem;
     text-align: center;
   }
 
@@ -106,7 +111,8 @@ header + main {
 
   .header-nav {
     font-size: 0.9rem; /* slightly smaller nav links */
-    margin-top: 0.5rem;
+    /* ACTION: Reduced margin-top from 0.5rem to 0.2rem for small screens */
+    margin-top: 0.2rem;
   }
 
   .header-nav a {
