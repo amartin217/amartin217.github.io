@@ -356,6 +356,15 @@ footer {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .project-full img {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+
 .caresync-section {
   margin-bottom: 2rem;
   overflow: auto; /* ensures container clears the float */
