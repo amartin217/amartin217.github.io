@@ -305,7 +305,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; /* centers cards on page */
+  justify-content: flex-start; /* align cards to left like other sections */
+  width: 100%; /* make portfolio fill the parent container (main) */
+  margin: 0 auto; /* center the portfolio section */
 }
 
 /* Individual project card */
@@ -313,10 +315,11 @@ footer {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 0.7rem;
-  width: 100%;
-  max-width: 600px; /* smaller overall card width */
+  width: 90%;
+  max-width: 90%; /* allow cards to use full width of portfolio container */
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 
 /* Project title */
 .project h3 {
