@@ -166,6 +166,7 @@ ul li {
 }
 
 .about .avatar {
+  float: left;
   width: 200px;
   height: auto;
   border-radius: 50%;
