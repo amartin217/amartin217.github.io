@@ -324,8 +324,8 @@ footer {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 0.7rem;
-  width: 90%;
-  max-width: 90%; /* allow cards to use full width of portfolio container */
+  width: 100%;
+  max-width: 100%; /* allow cards to use full width of portfolio container */
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
