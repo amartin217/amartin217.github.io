@@ -82,6 +82,39 @@ header + main {
   margin-top: 1.5rem;
 }
 
+/* iPhone and small screen optimization */
+@media (max-width: 480px) {
+  header {
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  .header-left {
+    font-size: 1rem; /* slightly smaller overall */
+    display: block;
+    text-align: center;
+  }
+
+  .header-left h1,
+  .header-left p.contact {
+    font-size: 1rem; /* shrink heading/contact text */
+  }
+
+  .header-left a {
+    font-size: 0.65rem; /* smaller links */
+  }
+
+  .header-nav {
+    font-size: 0.9rem; /* slightly smaller nav links */
+    margin-top: 0.5rem;
+  }
+
+  .header-nav a {
+    margin: 0 0.5rem;
+  }
+}
+
+
 
 /* =========================
    MAIN CONTENT
