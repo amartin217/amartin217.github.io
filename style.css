@@ -84,7 +84,7 @@ header {
 
 /* Optional: small spacing below header */
 header + main {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 /* iPhone and small screen optimization */
