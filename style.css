@@ -424,7 +424,7 @@ footer {
 @media (max-width: 768px) {
   .caresync-section img {
     float: left;
-    width: 100px; /* adjust as needed */
+    width: 170px; /* adjust as needed */
     height: auto;
     margin-right: 20px; /* space between image and text */
     border-radius: 10px;
