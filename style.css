@@ -18,9 +18,14 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
+    color: #00c
   text-decoration: underline;
 }
+
+a:visited        { color: #0c0 }  /* visited links         */
+a:active         { color: #ccc }  /* active links          */
+
 
 /* =========================
    HEADER
