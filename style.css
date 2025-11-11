@@ -13,18 +13,16 @@ body {
   flex-direction: column;
 }
 
-a {
-  color: #c00; /* links in content */
+a:link {
+  color: #0000FF /* links in content */
   text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #00c
   text-decoration: underline;
 }
 
-a:visited        { color: #0c0 }  /* visited links         */
-a:active         { color: #ccc }  /* active links          */
+a:visited        { color: #800080 }  /* visited links         */
 
 
 /* =========================
