@@ -160,7 +160,7 @@ ul li {
    ABOUT PAGE STYLING
 ========================= */
 .about {
-  width: 100%
+  width: 850px;
   gap: 2rem;
   align-items: flex-start;
 }
